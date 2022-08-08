@@ -1,0 +1,96 @@
+
+        // if ($this->request->getMethod() === 'post' && $this->validate(
+        //     [
+        // 'nama_pelajar' => 'required',
+        // 'tanggal_lahir' => 'required',
+        // 'umur' => 'required',
+        // 'tingkat_kelas' => 'required',
+        // 'program' => 'required',
+        // 'nama_ayah' => 'required',
+        // 'nama_ibu' => 'required',
+        // 'pekerjaan_ayah' => 'required',
+        // 'pekerjaan_ibu' => 'required',
+        // 'alamat_ayah' => 'required',
+        // 'alamat_ibu' => 'required',
+        // 'nomor_ayah' => 'required',
+        // 'nomor_ibu' => 'required',
+        //         // 'akta_kelahiran' => [
+        //         //     'uploaded[akta_kelahiran]',
+        //         //     'mime_in[akta_kelahiran,image/jpg,image/jpeg,image/gif,image/png]',
+        //         //     // 'ext_in[akta_kelahiran,pdf]',
+        //         //     'max_size[akta_kelahiran,10096]',
+        //         // ],
+        //         // 'ktp' => [
+        //         //     'uploaded[ktp]',
+        //         //     'mime_in[ktp,image/jpg,image/jpeg,image/gif,image/png]',
+        //         //     'ext_in[ktp, pdf, jpg, jpeg, png]',
+        //         //     'max_size[ktp,10096]',
+        //         // ],
+        //         // 'kartu_keluarga' => [
+        //         //     'uploaded[kartu_keluarga]',
+        //         //     'mime_in[kartu_keluarga,image/jpg,image/jpeg,image/gif,image/png]',
+        //         //     'ext_in[kartu_keluarga, pdf, jpg, jpeg, png]',
+        //         //     'max_size[kartu_keluarga,10096]',
+        //         // ],
+        //         // 'foto' => [
+        //         //     'uploaded[foto]',
+        //         //     'mime_in[foto,image/jpg,image/jpeg,image/gif,image/png]',
+        //         //     'ext_in[foto, pdf, jpg, jpeg, png]',
+        //         //     'max_size[foto,10096]',
+        //         // ],
+        //         // 'rapot' => [
+        //         //     'uploaded[rapot]',
+        //         //     'mime_in[rapot,image/jpg,image/jpeg,image/gif,image/png]',
+        //         //     'ext_in[rapot, pdf, jpg, jpeg, png]',
+        //         //     'max_size[rapot,10096]',
+        //         // ],
+        //     ]
+        // )) {
+        //     // $file1 = $this->request->getFile('akta_kelahiran');
+        //     // $file2 = $this->request->getFile('ktp');
+        //     // $file3 = $this->request->getFile('kk');
+        //     // $file4 = $this->request->getFile('pasfoto');
+        //     // $file5 = $this->request->getFile('rapot');
+
+        //     // $file = [
+        //     //     'akta_kelahiran' => $file1,
+        //     //     // 'ktp' => $file2,
+        //     //     // 'kk' => $file3,
+        //     //     // 'pasfoto' => $file4,
+        //     //     // 'rapot' => $file5,
+        //     // ];
+
+        //     if (!empty($_FILES['akta_kelahiran']['name']) && !empty($_FILES['ktp']['name']) && !empty($_FILES['kartu_keluarga']['name']) && !empty($_FILES['foto']['name']) && !empty($_FILES['rapot']['name'])) {
+        //         // Image upload
+
+        //         $avatar   = $this->request->getFile('akta_kelahiran');
+        //         $namabaru = str_replace(' ', '-', $avatar->getName());
+        //         $avatar->move(WRITEPATH . '../assets/upload/image/', $namabaru);
+        //         // Create thumb
+        //         $image = \Config\Services::image()
+        //             ->withFile(WRITEPATH . '../assets/upload/image/' . $namabaru)
+        //             ->fit(100, 100, 'center')
+        //             ->save(WRITEPATH . '../assets/upload/image/thumbs/' . $namabaru);
+        //         // masuk database
+        //         $data = [
+        //             // 'nama' => $this->request->getPost('nama'),
+        //             // 'deskripsi' => $this->request->getPost('deskripsi'),
+        //             // 'instagram' => $this->request->getPost('instagram'),
+        //             // 'linkedin' => $this->request->getPost('linkedin'),
+        //             'akta_kelahiran' => $namabaru,
+        //         ];
+        //         // return print_r($data);
+        //         $this->m_pendaftar->tambah($data);
+
+        //         return redirect()->to(base_url('admin/Pendaftar'))->with('sukses', 'Data Berhasil di Simpan');
+        //     }
+        //     $data = [
+        //         'nama' => $this->request->getPost('nama'),
+        //         'deskripsi' => $this->request->getPost('deskripsi'),
+        //         'instagram' => $this->request->getPost('instagram'),
+        //         'linkedin' => $this->request->getPost('linkedin'),
+        //     ];
+        //     $this->m_guru->tambah($data);
+
+        //     return redirect()->to(base_url('admin/guru'))->with('sukses', 'Data Berhasil di Simpan');
+        // }
